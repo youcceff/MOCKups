@@ -1,86 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mockup & 3D Artist</title>
-  <link rel="stylesheet" href="YOUYOUART.css">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-white font-sans">
 
-  <!-- Header / Navbar -->
-  <header>
-    <a href="#" class="logo">3D Studio</a>
-    <nav class="navigation" id="navMenu">
-      <a href="#mockup">Mockup</a>
-      <a href="#artist">3D Artist</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  <!-- Header -->
+  <header class="text-center py-10 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold">Your Name</h1>
+    <p class="text-gray-400 mt-2 text-base md:text-lg">
+      Creative Designer | Developer | Artist
+    </p>
   </header>
 
-  <!-- Hero -->
-  <section class="main">
-    <div>
-      <h2>Creative <span>Mockups</span></h2>
-      <h3>Professional 3D Art & Design</h3>
-      <a href="#mockup" class="main-btn">Explore Work</a>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-behance"></i></a>
-        <a href="#"><i class="fab fa-dribbble"></i></a>
-        <a href="#"><i class="fab fa-artstation"></i></a>
+  <!-- Works Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-10">My Works</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <div class="bg-gray-800 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" alt="Project 1" class="rounded-lg mb-4 w-full object-cover">
+        <h3 class="text-xl font-bold">Project Title 1</h3>
+        <p class="text-gray-400 text-sm mt-2">Short description of your project.</p>
+      </div>
+      
+      <div class="bg-gray-800 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" alt="Project 2" class="rounded-lg mb-4 w-full object-cover">
+        <h3 class="text-xl font-bold">Project Title 2</h3>
+        <p class="text-gray-400 text-sm mt-2">Short description of your project.</p>
+      </div>
+      
+      <div class="bg-gray-800 rounded-xl p-5 shadow-lg hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" alt="Project 3" class="rounded-lg mb-4 w-full object-cover">
+        <h3 class="text-xl font-bold">Project Title 3</h3>
+        <p class="text-gray-400 text-sm mt-2">Short description of your project.</p>
       </div>
     </div>
   </section>
 
-  <!-- Mockup Section -->
-  <section id="mockup">
-    <h2 class="title">Mockup Showcase</h2>
-    <div class="container">
-      <div class="box">
-           <p>App UI Mockup</p>
-        </div>
-      <div class="box">👕 <p>T-shirt Mockup</p></div>
-      <div class="box">💻 <p>hoodi Mockup</p></div>
+  <!-- Social Media Section -->
+  <section class="bg-gray-800 py-10 px-6">
+    <h2 class="text-2xl font-semibold text-center mb-6">Connect with Me</h2>
+    
+    <div class="flex flex-wrap justify-center gap-6 text-center">
+      <a href="https://twitter.com/yourusername" target="_blank" class="text-blue-400 hover:text-blue-300 text-lg">Twitter</a>
+      <a href="https://instagram.com/yourusername" target="_blank" class="text-pink-400 hover:text-pink-300 text-lg">Instagram</a>
+      <a href="https://github.com/yourusername" target="_blank" class="text-gray-300 hover:text-white text-lg">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-blue-500 hover:text-blue-400 text-lg">LinkedIn</a>
     </div>
   </section>
-  <section class="artwork" id="artwork">
-    <h2 class="title">3D Artist Mockups</h2>
-          <div class="cart">
-        <img src="IMAGE/_KINd.png"alt="GAZA Shirt Mockup 1">
-        <h3>hoodi mockup</h3>
-      </div>
-      <div class="cart">
-        <img src="IMAGE/PALISTEN hoodi.png" alt="GAZA Shirt Mockup 2">
-        <h3>hoodi mockup</h3>
-      </div>
-      <div class="cart">
-        <img src="IMAGE/PALISTEN T shirt.png" alt="Feel My Style Shirt">
-        <h3>simple t-shirt</h3>
-      </div>
-    </div>
-   
-   
+
   <!-- Footer -->
-  <footer class="footer">
-    <p class="pip">© 2025 <span>3D Studio</span>. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/ups.mock/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2025 Your Name. All rights reserved.
   </footer>
-  
-  <script>
-    // Responsive navbar toggle
-    const menuToggle = document.getElementById("menuToggle");
-    const navMenu = document.getElementById("navMenu");
 
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
-
-
-
